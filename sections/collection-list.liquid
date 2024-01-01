@@ -1,0 +1,142 @@
+<div class="relative large-row container" data-section-id="{{ section.id }}" data-section-type="collection-list">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <div class="large-row" data-cc-animate>
+        <h2 class="text-center {% if section.settings.enlarge_title %}giant-title{% else %}large-title{% endif%}">{{ section.settings.title | escape }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="grid-flex multiple-items">
+      {%- liquid
+        assign grid_class = 'one-quarter small-down--one-half'
+        if section.settings.grid == 2
+          assign grid_class = 'one-half small-down--one-half'
+        elsif section.settings.grid == 3
+          assign grid_class = 'one-third small-down--one-half'
+        elsif section.settings.grid == 5
+          assign grid_class = 'one-fifth small-down--one-half'
+        endif
+      -%}
+      {%- for collection in section.settings.collection_list -%}
+        {% render 'collection-block', collection: collection, extra_attrs: block.shopify_attributes, grid_class: grid_class, image: collection.featured_image, animate: forloop.index, animate_style: "fade-in-up" %}
+      {%- else -%}
+        {%- for i in (1..section.settings.grid) -%}
+          <div class="product-block grid-flex__item {{ grid_class }}" {{ block.shopify_attributes }}
+            data-cc-animate="fade-in-up" data-cc-animate-delay="{{ animate | times: 0.07 }}s">
+            <div class="hover-images global-border-radius">
+              <span class="product-block__image image-one">
+                {% capture placeholder_type %}collection-{{ forloop.index0 | modulo: 4 | plus: 1 }}{% endcapture %}
+                {{ placeholder_type | placeholder_svg_tag: 'placeholder-svg' }}
+              </span>
+            </div>
+            <div class="product-block__title">
+              <a>{{ 'homepage.onboarding.collection_title' | t }}</a>
+            </div>
+          </div>
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+<script>
+  $('.multiple-items').slick({
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        centerMode: true,
+        centerPadding: '20px',
+        prevArrow: `<button class='slick-prev'><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+  <rect width="30" height="30" rx="15" fill="#2A2A2A"/>
+  <path d="M16.85 19.4375L12.25 14.4375L16.85 9.4375" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></button>`,
+        nextArrow: '<button class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="15" transform="matrix(-1 0 0 1 30 0)" fill="#2A2A2A"/><path d="M13.15 19.4375L17.75 14.4375L13.15 9.4375" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite:true,
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              arrows: true
+            }
+          },
+           {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              arrows: true
+
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: true
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: true
+            }
+          }
+        ]
+      });
+</script>
+{% schema %}
+  {
+    "name": "Collection list",
+    "tag": "section",
+    "class": "section-collection-list",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Collection list"
+      },
+      {
+        "type": "checkbox",
+        "id": "enlarge_title",
+        "label": "Enlarge heading",
+        "default": false
+      },
+      {
+        "type": "collection_list",
+        "id": "collection_list",
+        "label": "Collections",
+        "limit": 20
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Collections per row",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "default": 4
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection list"
+      }
+    ],
+    "disabled_on": {
+      "groups": [
+        "aside"
+      ]
+    }
+  }
+{% endschema %}

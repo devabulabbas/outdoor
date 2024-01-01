@@ -1,0 +1,104 @@
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "home_only_announcement_bar": false,
+        "announcement_bar_text": "Free Shipping on orders above $200",
+        "announcement_bar_col": "#43467f",
+        "announcement_bar_grad": "",
+        "announcement_text_col": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "f016c00b-02d6-4de9-9b80-886e50b0d65a": {
+          "type": "menu_promo",
+          "settings": {
+            "dropdown_link_title": "Men",
+            "image": "shopify:\/\/shop_images\/104_fl.jpg",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all"
+          }
+        },
+        "f3fb7305-e7f8-4481-b43f-a90ee6858906": {
+          "type": "menu_promo",
+          "settings": {
+            "dropdown_link_title": "Women",
+            "image": "shopify:\/\/shop_images\/2026_fl.jpg",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all"
+          }
+        },
+        "4678bca9-4929-4995-8fc1-8082ebeb15ea": {
+          "type": "menu_promo",
+          "settings": {
+            "dropdown_link_title": "Hike & Camp",
+            "image": "shopify:\/\/shop_images\/99559BXL.jpg",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all"
+          }
+        },
+        "1992cba4-7238-4a73-90c8-c2a2ea462b84": {
+          "type": "menu_promo",
+          "settings": {
+            "dropdown_link_title": "Fitness",
+            "image": "shopify:\/\/shop_images\/gfnf.jpg",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all"
+          }
+        },
+        "1bddd821-99b5-4f77-a034-ab67abb57336": {
+          "type": "menu_promo",
+          "settings": {
+            "dropdown_link_title": "Brands",
+            "image": "shopify:\/\/shop_images\/download_3.jpg",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "f016c00b-02d6-4de9-9b80-886e50b0d65a",
+        "f3fb7305-e7f8-4481-b43f-a90ee6858906",
+        "4678bca9-4929-4995-8fc1-8082ebeb15ea",
+        "1992cba4-7238-4a73-90c8-c2a2ea462b84",
+        "1bddd821-99b5-4f77-a034-ab67abb57336"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/outdoor_1_1.png",
+        "logo_width": 140,
+        "desktop_layout": "center",
+        "show_search_bar_desktop": true,
+        "show_search_bar_mobile": true,
+        "logo_position_mobile": "inline",
+        "dock_nav": true,
+        "cart_icon": "shopping-cart",
+        "main_linklist": "main-menu",
+        "show_country_selector": true,
+        "show_language_selector": true,
+        "show_messages": true,
+        "home_only_messages": false,
+        "slideshow_messages": false,
+        "message_1_text": "",
+        "message_1_url": "",
+        "message_2_text": "",
+        "message_2_url": "",
+        "message_3_text": "",
+        "message_3_url": ""
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_268.png",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 0,
+            "color_overlay_text": "#333333",
+            "text_alignment": "align-left-desktop-only",
+            "overlay_position_x": 13,
+            "overlay_position_y": 45,
+            "overlay_title": "Start A New Journey",
+            "enlarge_title": false,
+            "overlay_title_width": 100,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "Never Stops Explore",
+            "enlarge_text": false,
+            "overlay_url_text_1": "Shop Now",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 70,
+            "overlay_title": "Slideshow",
+            "enlarge_title": false,
+            "overlay_title_width": 100,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "Use this section to welcome customers to your store, show off your images or display a promotion",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 1000,
+        "height_mobile": 1000,
+        "mobile_text_below": true,
+        "slide_transition": "fade",
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "settings": {
+        "title": "Collection list",
+        "enlarge_title": false,
+        "collection_list": [
+          "outdoor",
+          "outdoor-weather-instruments",
+          "outdoor-covers",
+          "outdoor-tackle-storage",
+          "paddlesports-life-vests",
+          "watersports-life-vests"
+        ],
+        "grid": 4
+      }
+    },
+    "promo-images": {
+      "type": "promotional-images",
+      "blocks": {
+        "image-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_284.png",
+            "image_link": "",
+            "layout": "image_after",
+            "color_text": "#333333",
+            "color_bg": "#dae4e6",
+            "gradient_bg": "",
+            "overlay_opacity": 0,
+            "title": "<p>Lorem ipsum dolor sit amet consectetur. Viverra nibh nunc erat magna sed fringilla id. Egestas sapien erat tempor vivamus aliquam ac. Etiam orci sed ac arcu. Mauris at <\/p>",
+            "offer": "Provide Your All Outdoor Needs",
+            "url_text": "Know More",
+            "url": "",
+            "url_style": "button_2",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_283.png",
+            "image_link": "",
+            "layout": "image_after",
+            "color_text": "#333333",
+            "color_bg": "#dae4e6",
+            "gradient_bg": "",
+            "overlay_opacity": 0,
+            "title": "",
+            "offer": "",
+            "url_text": "",
+            "url": "",
+            "url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "image-0",
+        "image-1"
+      ],
+      "settings": {
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Hot Picks",
+        "enlarge_title": false,
+        "link_text": "Shop now",
+        "collection": "test",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "row_count": 1,
+        "grid_mobile": "2"
+      }
+    },
+    "89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a": {
+      "type": "image-gallery",
+      "blocks": {
+        "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_12_6a9ddf8e-8949-43fb-acef-1784b750aea8.png",
+            "enlarge_image": true,
+            "link": "",
+            "title": "Women Athelesear",
+            "text": "<p>Shop Women<\/p>",
+            "button_label": "Shop Women",
+            "overlay_position": "center-center"
+          }
+        },
+        "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_274.png",
+            "enlarge_image": false,
+            "link": "",
+            "title": "Men Fittness Wear",
+            "text": "",
+            "button_label": "Shop Men",
+            "overlay_position": "center-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-1",
+        "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-2"
+      ],
+      "settings": {
+        "grid": 2,
+        "image_height": 300,
+        "image_height_mobile": 300,
+        "enable_margin": true,
+        "enable_carousel": true,
+        "overlay_style": "no_background",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_url_style": "button_1"
+      }
+    },
+    "6da16da8-634b-4a5b-94f2-b408926efbf6": {
+      "type": "logo-list",
+      "blocks": {
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-1": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-2": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-3": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-1",
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-2",
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-3"
+      ],
+      "settings": {
+        "title": "Logo list",
+        "color_bg": "#dae4e6",
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "image_opacity": 75
+      }
+    },
+    "6385f23f-95ca-41a3-b757-6bbcb6efb0b2": {
+      "type": "standout-collection",
+      "settings": {
+        "enable_overlay": false,
+        "section_heading": "Featured Products",
+        "section_para": "<p>Pair some text with a product to highlight features.<\/p>",
+        "collection": "test",
+        "color_text": "#333333",
+        "color_bg": "#dae4e6",
+        "gradient_bg": "",
+        "alternative_image": "shopify:\/\/shop_images\/Rectangle_15_cc9b13b0-2d69-41e4-9ce7-b16255b5d1aa.png",
+        "layout": "left",
+        "show_vendor": false,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 0,
+        "color_overlay_text": "#333333",
+        "overlay_url_text": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "overlay_position_y": 70,
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "product_id": "",
+        "show_chevron": true,
+        "chevron_position": "right",
+        "label_position_x": 10,
+        "label_position_y": 30
+      }
+    },
+    "2e12ce62-90e5-4fd7-9d4e-a12f3e23f28a": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_26.png",
+        "image_link": "",
+        "height": "fixed",
+        "height_desktop": 480,
+        "height_mobile": 500,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 62,
+        "color_overlay_text": "#333333",
+        "text_alignment": "center",
+        "overlay_position_x": 50,
+        "overlay_position_y": 50,
+        "mobile_text_below": true,
+        "overlay_title": "Step into the Great Outdoors",
+        "enlarge_title": false,
+        "overlay_title_width": 100,
+        "styled_words": "",
+        "words_style": "stencil",
+        "highlight_words_top": 10,
+        "highlight_color": "#ffffff",
+        "styled_word_color": "#b5e0fa",
+        "overlay_text": "Lorem ipsum dolor sit amet consectetur. Lectus egestas non semper ac sem diam. Hendrerit pellentesque in commodo dictum sed id cursus semper. Placeratdictum bibendum. Urna curabitur eget facilisi",
+        "enlarge_text": false,
+        "overlay_url_text_1": "",
+        "overlay_url_1": "",
+        "overlay_url_text_2": "",
+        "overlay_url_2": "",
+        "overlay_url_style": "button_1",
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "show_chevron": true,
+        "product_id_1": "",
+        "chevron_position_1": "right",
+        "label_position_x_1": 20,
+        "label_position_y_1": 30,
+        "product_id_2": "",
+        "chevron_position_2": "right",
+        "label_position_x_2": 80,
+        "label_position_y_2": 50
+      }
+    },
+    "ee1bcebb-0449-4f9b-afd2-e973275c9dfb": {
+      "type": "standout-collection",
+      "settings": {
+        "enable_overlay": false,
+        "section_heading": "<p>Featured Products<\/p>",
+        "section_para": "<p>Pair some text with a product to highlight features.<\/p>",
+        "collection": "camping-accessories",
+        "color_text": "#333333",
+        "color_bg": "#dae4e6",
+        "gradient_bg": "",
+        "alternative_image": "shopify:\/\/shop_images\/Rectangle_15_cc9b13b0-2d69-41e4-9ce7-b16255b5d1aa.png",
+        "layout": "right",
+        "show_vendor": false,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_url_text": "Shop now",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "overlay_position_y": 70,
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "product_id": "",
+        "show_chevron": true,
+        "chevron_position": "right",
+        "label_position_x": 10,
+        "label_position_y": 30
+      }
+    },
+    "15ca59c0-c95b-4b7d-809c-6f104b929c73": {
+      "type": "testimonials",
+      "blocks": {
+        "template--21758426284317__15ca59c0-c95b-4b7d-809c-6f104b929c73-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "image": "shopify:\/\/shop_images\/Ellipse_18.png",
+            "author": "Dean D. US"
+          }
+        },
+        "template--21758426284317__15ca59c0-c95b-4b7d-809c-6f104b929c73-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "image": "shopify:\/\/shop_images\/Ellipse_18.png",
+            "author": ""
+          }
+        },
+        "c16e46a1-f852-49a8-9e00-1f207ef2042c": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "image": "shopify:\/\/shop_images\/Ellipse_18.png",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21758426284317__15ca59c0-c95b-4b7d-809c-6f104b929c73-testimonial-1",
+        "template--21758426284317__15ca59c0-c95b-4b7d-809c-6f104b929c73-testimonial-2",
+        "c16e46a1-f852-49a8-9e00-1f207ef2042c"
+      ],
+      "settings": {
+        "title": "Check What client says",
+        "subtitle": "<p>Lorem ipsum dolor sit amet consectetur. Lectus egestas non semper ac sem diam. Hendrerit pellentesque in commodo dictum sed id cursus semper. <\/p>",
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "#ecf1f2",
+        "gradient_bg": "",
+        "color_star": "#ffdd00",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "autoplay": false,
+        "autoplay_speed": 6,
+        "circle_images": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "collection-list",
+    "promo-images",
+    "featured-collection",
+    "89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a",
+    "6da16da8-634b-4a5b-94f2-b408926efbf6",
+    "6385f23f-95ca-41a3-b757-6bbcb6efb0b2",
+    "2e12ce62-90e5-4fd7-9d4e-a12f3e23f28a",
+    "ee1bcebb-0449-4f9b-afd2-e973275c9dfb",
+    "15ca59c0-c95b-4b7d-809c-6f104b929c73"
+  ]
+}
