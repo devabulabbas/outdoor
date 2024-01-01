@@ -1,3 +1,71 @@
+<style>
+  .product_description_accordion{
+      background-color: #f9e9e7;
+      padding: 10px;
+      
+    }
+    .ced-accordion::after, .product_description_accordion::after{
+    content: '+';
+    float: right;
+    margin-left: 15px;
+    }
+    .ced-accordion-content, .product_description_accordion-content1{
+      display:none;
+    }
+    .active {
+    	display: block;
+    }
+    .ced-accordion.active::after, .product_description_accordion.active1::after{
+      content: '-';
+    }
+    .ced-accordion.active, .product_description_accordion.active1{
+
+    }
+
+    .enable_slick_slider-thumbnails img {
+    	width: 100px;
+      height:100px;
+    }
+    .ced-accordion-content{
+    	padding:10px 0;
+    }
+    .footer__blocks-wrapper .footer-block__heading, .footer-block__heading1{
+     	font-size:2rem;
+    }
+  @media (max-width:749px){
+ .accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }  
+  .accordion-title::after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+  }  
+  .active::after {
+    content: "\2212";
+  } 
+  .footer-block__heading {
+    max-width: 100%;
+    grid-column: span 2;
+  }   
+  .footer-block__heading {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-block__details-content li{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }  
+  .footer-block__heading{
+    margin-bottom:0;
+  }
+} 
+</style>
 <footer class="page-footer {% if section.settings.sticky_footer %}page-footer--with-sticky-footer{% endif %}" data-section-id="{{ section.id }}" data-section-type="footer">
   <div class="page-footer__inner {% if section.settings.sticky_footer %}sticky-footer{% endif %}">
     <div class="container">
@@ -20,8 +88,8 @@
               <div class="footer-block grid__item small-down--one-whole {{ col_class }}" {{ block.shopify_attributes }}>
                 {%- case block.type -%}
                   {%- when 'link_list' -%}
-                    <p class="footer-block__heading">{{ block.settings.heading | escape }}</p>
-                    <ul class="nav">
+                    <p class="footer-block__heading accordion-title">{{ block.settings.heading | escape }}</p>
+                    <ul class="nav accordion-content">
                       {%- for link in block.settings.menu.links -%}
                         <li class="nav__item">
                           <a href="{{ link.url }}" class="nav__link">{{ link.title }}</a>
@@ -30,18 +98,18 @@
                     </ul>
 
                   {%- when 'social' -%}
-                    <p class="footer-block__heading">{{ block.settings.heading | escape }}</p>
+                    <p class="footer-block__heading accordion-title">{{ block.settings.heading | escape }}</p>
                     {%- render 'social-icons', icon_setting: settings.social_custom_icon_footer, icon_size: '48x' -%}
                     {%- if shop.features.follow_on_shop? and block.settings.enable_follow_on_shop -%}
-                      <div class="follow-on-shop">
+                      <div class="follow-on-shop accordion-content">
                         {{- shop | login_button: action: 'follow' -}}
                       </div>
                     {%- endif -%}
 
                   {%- when 'text' -%}
-                    <p class="footer-block__heading">{{ block.settings.heading | escape }}</p>
+                    <p class="footer-block__heading ">{{ block.settings.heading | escape }}</p>
                     {%- if block.settings.text != blank -%}
-                      <div class="rte">
+                      <div class="rte ">
                         {{ block.settings.text }}
                       </div>
                     {%- endif -%}
@@ -83,12 +151,13 @@
                 <input type="hidden" id="contact_tags" name="contact[tags]" value="prospect,newsletter">
                 <div class="subscribe-form__inputs">
                   <div class="input-wrapper">
+                      <span  class="ced_newsletter_error" style="color:red;"></span>
                     <label class="subscribe-form__label" for="footer_mailinglist_email">
                       {{- section.settings.subscribe_label -}}
                     </label>
-                    <input type="email" required class="subscribe-form__email required" value="" id="footer_mailinglist_email" name="contact[email]">
+                    <input type="email" required class="subscribe-form__email required footer__newsletter-input" value="" id="footer_mailinglist_email" name="contact[email]">
                   </div>
-                  <button class="btn btn--secondary subscribe-form__submit" type="submit">
+                  <button class="btn btn--secondary subscribe-form__submit " data-footer-newsletter-submit type="submit">
                     {{- section.settings.subscribe_button -}}
                   </button>
                 </div>
@@ -146,6 +215,63 @@
     </div>
   </div>
 </footer>
+<script>
+   // code for Footer accordian section.
+(function(){
+  let mediaQueryResult =  window.matchMedia("(max-width: 749px)");
+  
+  accordionHeadings = document.querySelectorAll(".accordion-title");
+  accordionContent = document.querySelectorAll('.accordion-content');
+  
+  implementAccordion = mediaQueryResult => {
+      if(mediaQueryResult.matches){
+          hidePanels();
+          accordionHeadings.forEach((heading, index) => {
+              heading.addEventListener('click', (e)=>{
+                let heading = e.currentTarget;
+                (heading.nextElementSibling.style.maxHeight)? hidePanels() : showPanel(heading);
+              })
+          })
+      }
+  },
+  showPanel = element => {
+      hidePanels();
+      element.classList.add("active");
+      element.nextElementSibling.style.maxHeight = element.nextElementSibling.scrollHeight + "px";
+  },
+  hidePanels = () => {
+      accordionHeadings.forEach((heading, index) => {
+        if (accordionContent[index]) {
+          accordionContent[index].style.maxHeight = null;
+        }
+        
+          heading.classList.remove('active');
+      });
+  },
+  init = () => {
+      implementAccordion(mediaQueryResult);
+      mediaQueryResult.addEventListener('change', (e)=>{
+        implementAccordion(mediaQueryResult);
+      });
+  };
+  init();
+})();
+
+</script>
+
+<script>
+  var email=document.querySelector('.footer__newsletter-input');
+  document.querySelector('[data-footer-newsletter-submit]').setAttribute('disabled', 'disabled');
+  email.addEventListener('input', function(e){
+    var submit_btn=document.querySelector('[data-footer-newsletter-submit]');
+    var error_msg=document.querySelector('.ced_newsletter_error');
+  	var email_value=this.value;
+
+    var regex1=/^\w+([.-]\w+)*@\w+([.-]\w+)*(\.\w{2,4})+$/;
+    var regex2=/^[0-9]/;
+    (email_value=='') ? (error_msg.innerHTML='**Email Address cannot be blank!',submit_btn.setAttribute('disabled', 'disabled')) :(!email_value.match(regex1) || email_value.match(regex2)) ? (error_msg.innerHTML='**Invalid Email Address',submit_btn.setAttribute('disabled', 'disabled')) : (error_msg.innerHTML='',submit_btn.removeAttribute('disabled'));
+  })
+</script>
 
 {% schema %}
   {

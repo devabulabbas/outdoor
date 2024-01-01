@@ -18,9 +18,10 @@
               {%- assign grid_class = 'one-quarter' -%}
             {%- endif -%}
             {% capture grid_class_list %}{{ grid_class }} grid-flex__item{% endcapture %}
-
+  {% assign quickbuy_toggle = settings.quickbuy_buttons_toggle %}
             {%- for product in recommendations.products -%}
               {% render 'product-block',
+                quickbuy: quickbuy_toggle,
                 product: product,
                 grid_class: grid_class_list,
                 show_vendor: section.settings.show_vendor,
@@ -86,7 +87,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   loadProductRecommendationsIntoSection();
 });
 {% endjavascript %}
-
+<script src="https://cdn.jsdelivr.net/npm/arrive@2.4.1/src/arrive.min.js"></script>
+    <script type="text/javascript">
+      document.arrive(".wishlist-hero-custom-button", function (wishlistButton) {
+      var ev = new CustomEvent("wishlist-hero-add-to-custom-element", {
+      detail: wishlistButton,
+      });
+      document.dispatchEvent(ev);
+      });
+    </script>
 {% schema %}
   {
     "name": "Related products",

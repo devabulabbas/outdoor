@@ -14,6 +14,37 @@
     assign form_class = form_class | append: ' variant--unavailable'
   endunless
 -%}
+<style>
+  .product_description_accordion{
+    background-color: white;
+    padding: 15px;
+  }
+  .accordion::after, .product_description_accordion::after{
+  content: '+';
+  float: right;
+  margin-left: 5px;
+  }
+  .accordion-content, .product_description_accordion-content{
+    display:none;
+  }
+  .active {
+  	display: block;
+  }
+  .accordion.active::after, .product_description_accordion.active::after{
+    content: '-';
+  }
+  .accordion.active, .product_description_accordion.active{
+  	background-color: white;
+    padding: 15px;
+  }
+  
+  .enable_slick_slider-thumbnails img {
+  	width: 100px;
+    height:100px;
+  }
+}
+</style>
+
 
 <div data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true" data-components="accordion,custom-select">
   <div class="container product-detail very-large-row-under" data-product-id="{{ product.id }}">
@@ -461,6 +492,7 @@
                   {%- if block.settings.full_width -%}
                     {%- capture full_width_content -%}{{ full_width_content }}{{ product_description }}{%- endcapture -%}
                   {%- else -%}
+                    <h4 class="product-description-heading product_description_accordion">{{ 'Description' }}</h4>
                     {{ product_description }}
                   {%- endif -%}
 
@@ -675,6 +707,24 @@
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {% render 'structured-data-product', product: product, current_variant: current_variant %}
 
+<script>
+  product_description_accordion();
+function product_description_accordion(){
+    var existing_classes=$('.product_description_accordion').next().attr('class')+' product_description_accordion-content';
+    $('.product_description_accordion').next().attr('class',existing_classes);
+  $('.product_description_accordion').click(function(){
+    if($(this).hasClass('active')){
+         $(this).removeClass('active');
+         $(this).next().removeClass('active');
+      }
+      else{
+        $(this).addClass('active');
+        $(this).next().addClass('active');
+      }
+  })
+}
+
+</script>
 {% schema %}
   {
     "name": "Product details",
