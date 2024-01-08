@@ -1,0 +1,6 @@
+.logo-list__logo-image .rimage-wrapper img {
+  cursor: pointer;
+}
+.logo-list__logo-image .rimage-wrapper:hover img {
+  opacity: 0.3 !important;
+}

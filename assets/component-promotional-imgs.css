@@ -1,0 +1,74 @@
+.about_wrapper .promotional-row .promotional-row__title {
+  font-size: 40px;
+}
+.about_wrapper .promotional-row__text {
+  color: var(--dark-black-color);
+  font-weight: 400;
+  margin: 0 auto;
+}
+.about_wrapper .promotional-row .promotional-row__content--link {
+  margin-top: 5px;
+}
+/*=================Media CSS=================*/
+@media (min-width: 1024px) {
+  .about_wrapper .promotional-row__text {
+    width: 80%;
+  }
+  .about_wrapper .promotional-row .block-2 .promotional-image {
+    overflow: visible;
+  }
+  .about_wrapper .block-2 .rimage-wrapper:before {
+    position: absolute;
+    content: "";
+    width: 638px;
+    height: 280px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0778/7311/9517/t/5/assets/direction%20compass%20icon-01.png?v=1690971635");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -6%;
+    left: -30%;
+  }
+  .about_wrapper .promotional-row .promotional-row__content {
+    padding-bottom: 50px;
+  }
+  .about_wrapper .promotional-row {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 767px) {
+  .about_wrapper .promotional-row .promotional-row__content {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1267px) {
+  .about_wrapper .promotional-row .promotional-row__title {
+    font-size: 32px;
+  }
+  .about_wrapper .promotional-row .promotional-row__content {
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .about_wrapper .grid {
+    margin-left: 0;
+  }
+  .about_wrapper .grid__item {
+    margin-bottom: 20px;
+    padding-left: 0;
+    width: 100%;
+  }
+  .about_wrapper .promotional-row .promotional-row__container {
+    min-height: initial;
+  }
+  .about_wrapper .promotional-row .promotional-row__content {
+    position: static;
+    transform: translate(0);
+    padding: 45px 30px;
+    width: 100%;
+    left: 50%;
+  }
+  .about_wrapper .grid__item .rimage-outer-wrapper {
+    max-width: unset;
+    max-height: unset;
+  }
+}

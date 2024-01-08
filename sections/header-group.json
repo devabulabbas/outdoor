@@ -80,7 +80,7 @@
         "show_search_bar_desktop": true,
         "show_search_bar_mobile": true,
         "logo_position_mobile": "inline",
-        "dock_nav": true,
+        "dock_nav": false,
         "cart_icon": "shopping-cart",
         "main_linklist": "main-menu",
         "show_country_selector": true,

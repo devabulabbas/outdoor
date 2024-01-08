@@ -1,0 +1,26 @@
+.gallery__item .large-title {
+  margin-bottom: 10px;
+  font-size: 36px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.gallery__item .overlay__links {
+  text-align: left;
+}
+.gallery__item .overlay__links .standard-link {
+  color: #fff;
+}
+/*=================Media CSS=================*/
+@media (min-width: 990px) {
+}
+
+@media (max-width: 989px) {
+}
+@media (min-width: 768px) and (max-width: 989px) {
+  .gallery__row {
+    flex-direction: column;
+  }
+  .gallery__row .gallery__item {
+    flex: unset;
+  }
+}

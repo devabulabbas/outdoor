@@ -1,4 +1,9 @@
-<div class="relative container container--no-mobile-padding section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="logo-list">
+{{ 'component-logo-list.css' | asset_url | stylesheet_tag }}
+<div
+  class="relative container container--no-mobile-padding section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="logo-list"
+>
   {% style %}
     .section-{{ section.id }} .logo-list-section {
       background-color: {{ section.settings.color_bg }};
@@ -22,37 +27,55 @@
     {%- endfor -%}
   {% endstyle %}
   <div class="page-width large-section logo-list-section global-border-radius large-row">
-
     {%- if section.settings.title != blank or section.settings.enable_carousel == true -%}
       <div class="logo-list__title text-center" data-cc-animate>
         {% if section.settings.title != blank %}
-          <h2 class="{% if section.settings.enlarge_title %}giant-title{% else %}large-title{% endif%}">{{ section.settings.title | escape }}</h2>
+          <h2 class="{% if section.settings.enlarge_title %}giant-title{% else %}large-title{% endif%}">
+            {{ section.settings.title | escape }}
+          </h2>
         {% endif %}
       </div>
     {% endif %}
 
-    <div class="logo-list">
+    <div class="logo-list multiple-item">
       {% for block in section.blocks %}
         {%- if block.settings.link != blank -%}
-          <a class="logo-list__logo logo-list__logo-{{ forloop.index }} logo-list__link" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+          <a
+            class="logo-list__logo logo-list__logo-{{ forloop.index }} logo-list__link"
+            href="{{ block.settings.link }}"
+            {{ block.shopify_attributes }}
+          >
         {%- else -%}
           <div class="logo-list__logo logo-list__logo-{{ forloop.index }}" {{ block.shopify_attributes }}>
         {%- endif -%}
 
-        <div class="logo-list__logo-image" data-cc-animate="fade-in-up" data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s">
+        <div
+          class="logo-list__logo-image"
+          data-cc-animate="fade-in-up"
+          data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"
+        >
           {%- if block.settings.image != blank -%}
             <div class="rimage-outer-wrapper" style="max-width: {{ block.settings.image.width }}px">
-              <div class="rimage-wrapper lazyload--placeholder" style="padding-top: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%">
+              <div
+                class="rimage-wrapper lazyload--placeholder"
+                style="padding-top: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
+              >
                 {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <img class="rimage__image lazyload fade-in"
+                <img
+                  class="rimage__image lazyload fade-in"
                   data-src="{{ img_url }}"
                   data-widths="[{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2}}]"
                   data-aspectratio="{{ block.settings.image.aspect_ratio }}"
                   data-sizes="auto"
-                  alt="{{ block.settings.image.alt | escape }}">
+                  alt="{{ block.settings.image.alt | escape }}"
+                >
                 <noscript>
                   {%- capture image_width_key -%}{{ block.settings.image_width }}x{%- endcapture -%}
-                  <img class="rimage__image" src="{{ block.settings.image | img_url: image_width_key }}" alt="{{ image.alt | escape }}">
+                  <img
+                    class="rimage__image"
+                    src="{{ block.settings.image | img_url: image_width_key }}"
+                    alt="{{ image.alt | escape }}"
+                  >
                 </noscript>
               </div>
             </div>
@@ -69,16 +92,70 @@
           </div>
         {%- endif -%}
 
-      {%- unless block.settings.link != blank -%}
-        </div>
-      {%- else -%}
-       </a>
-      {%- endunless -%}
-
+        {%- unless block.settings.link != blank -%}
+          </div>
+        {%- else -%}
+          </a>
+        {%- endunless -%}
       {% endfor %}
     </div>
   </div>
 </div>
+
+<script>
+  $('.multiple-item').slick({
+        dots: false,
+     arrows: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        prevArrow: "<button class='slick-prev'><svg xmlns='http://www.w3.org/2000/svg' width='15' height='12' viewBox='0 0 6.591 11.061'><path d='M0,10,5,5,0,0' transform='translate(6.061 10.53) rotate(180)' fill='none' stroke='#383838' stroke-width='1.5'></path></svg></button>",
+        nextArrow: '<button class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 6.591 11.061"><path d="M0,10,5,5,0,0" transform="translate(0.53 0.53)" fill="none" stroke="#383838" stroke-width="1.5"></path></svg></button>',
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite:true,
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+                 arrows: true
+            }
+          },
+           {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+               arrows: true
+
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+               arrows: true
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+               arrows: true
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+</script>
 
 {% schema %}
 {

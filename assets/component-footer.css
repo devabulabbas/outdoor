@@ -1,0 +1,96 @@
+/*===============Footer-CSS====================*/
+.page-footer .page-footer__inner {
+  padding-top: 50px;
+}
+.page-footer .page-footer__inner,
+.page-footer .page-footer__blocks {
+  padding-bottom: 50px;
+}
+.footer-block .rte p {
+  width: 70%;
+}
+.page-footer .footer-block a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.page-footer .page-footer__end {
+  margin-top: 15px;
+}
+.page-footer .page-footer__end {
+  align-items: center;
+}
+.footer-block .rte,
+.footer-block .nav__item .nav__link {
+  font-size: 14px;
+}
+.page-footer__end .copyright-text {
+  font-size: 13.97px;
+}
+.page-footer .subscribe-form__heading {
+  text-align: left;
+}
+.page-footer .page-footer__hr {
+  border-color: #e8e8e8;
+}
+.payment-text {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.page-footer .payment-icons {
+  text-align: left;
+}
+.page-footer__subscribe .subscribe-form__inputs {
+  margin-bottom: 30px;
+  border-bottom: unset;
+  gap: 15px;
+}
+.page-footer .page-footer__subscribe .input-wrapper {
+  background-color: var(--white-color);
+  border-radius: 30px;
+}
+.page-footer .page-footer__subscribe .subscribe-form__label {
+  top: calc((26px + 1.4em) / 2) !important;
+  color: #bcbcbc;
+  left: 22px;
+}
+.page-footer .subscribe-form__inputs .subscribe-form__email {
+  color: var(--dark-black-color);
+  padding-left: 22px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+.subscribe-form__submit {
+  background-color: var(--white-color);
+  color: var(--dark-black-color);
+}
+.subscribe-form__inputs .ced_newsletter_error {
+  position: absolute;
+  bottom: -25px;
+  font-size: 12px;
+  left: 20px;
+}
+.subscribe-form__inputs .subscribe-form__submit {
+  border: 1px solid #fff;
+}
+.page-footer .subscribe-form__inputs .subscribe-form__submit:hover {
+  background-color: transparent;
+}
+.page-footer .subscribe-form__inputs .in-focus label {
+  top: calc((5px + 1.4em) / 2) !important;
+}
+/*=================Min-width media=================*/
+@media (min-width: 1200px) {
+  .page-footer .one-third {
+    width: 22.333333%;
+  }
+  /* .page-footer .page-footer__subscribe {
+    width: calc(30% - 15px);
+  } */
+  /* .page-footer .page-footer__subscribe {
+    max-width: 360px;
+  } */
+  .page-footer .page-footer__subscribe {
+    padding-top: 0;
+  }
+}

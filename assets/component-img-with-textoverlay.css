@@ -1,0 +1,16 @@
+.outdoors_img_wrapper {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.outdoors_img_wrapper .overlay {
+  border-radius: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  padding: 50px;
+  width: 660px;
+}
+.outdoors_img_wrapper .overlay-title {
+  letter-spacing: 0.5px;
+}

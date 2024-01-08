@@ -9593,7 +9593,7 @@ button[disabled],
 input[type=submit][disabled],
 .btn[disabled],
 .btn--primary[disabled] {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .btn--secondary, .btn--quicklook {
@@ -9618,7 +9618,7 @@ input[type=submit].btn--quicklook:not(.btn--plain),
 .btn.btn--secondary:not(.btn--plain),
 .btn.btn--quicklook:not(.btn--plain) {
   --button-border-color: {{ secondary_btn_border }};
-  background-color: {{ secondary_btn_background }};
+  {% comment %} background-color: {{ secondary_btn_background }}; {% endcomment %}
   color: {{ secondary_btn_text }};
 }
 

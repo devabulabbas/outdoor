@@ -1,0 +1,50 @@
+/*================Header========================*/
+header .icon--header .icon {
+  stroke-width: 1.4;
+}
+header .icon--header .icon {
+  height: 22px;
+  width: 22px;
+  opacity: 0.8;
+}
+header .wishlist-hero-header-icon {
+  display: flex;
+}
+header svg.wlh-svg-Icon path {
+  fill: #2a2a2a;
+}
+/*======================Navigation-menu=================*/
+.site-header .header-navigation {
+  border-top: 1px solid #ebe7e7;
+}
+nav .site-nav > .site-nav__item > .site-nav__link {
+  padding: 0;
+}
+nav .site-nav .site-nav--active {
+  padding-right: 25px;
+}
+.site-nav__icon svg {
+  display: none;
+}
+.nav .site-nav__item .site-nav__link::after {
+  content: none;
+}
+/*=================Media CSS=================*/
+@media (min-width: 940px) {
+  header .wishlist_text,
+  .header-icon-text {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  header .wishlist-hero-header-icon .wlh-svg-icon-heart-empty,
+  .utils__right .utils__item:last-child,
+  .wishlist-hero-header-icon {
+    margin-right: 6px;
+  }
+  .utils__right .customer-account .icon {
+    margin: 0;
+  }
+  .utils__right .header-cart .icon {
+    margin: 0;
+  }
+}

@@ -1,0 +1,42 @@
+:root {
+  --black-color: #2a2a2a;
+  --dark-black-color: #000;
+  --white-color: #fff;
+}
+/*================Buttons=============*/
+body .btn.btn--small {
+  min-width: 146px;
+  font-weight: 500;
+}
+body .btn.btn--primary {
+  padding: 12px 35px;
+}
+body .btn--primary:hover {
+  background-color: var(--white-color);
+  color: var(--dark-black-color) !important;
+  box-shadow: 0px 0px 0px 0px #ffffff55 inset, 0px 0px 2px 2px #ffffff55 !important;
+}
+body .btn.btn--secondary {
+  padding: 12px 16px;
+}
+body .btn.btn--secondary:hover {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+body .btn:not(.btn--plain):hover {
+  transform: unset;
+  box-shadow: unset;
+}
+/*====================Wishlist=======================*/
+.wishlisthero-floating:hover {
+  background-color: transparent !important;
+}
+.product-block__image-container .wishlist-hero-custom-button {
+  position: absolute;
+  top: 12%;
+  z-index: 2;
+  right: 3%;
+}
+.wishlisthero-floating button {
+  min-width: unset !important;
+}

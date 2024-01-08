@@ -1,0 +1,36 @@
+.col_top_image {
+  max-width: 90px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.collection-list .product-block__title {
+  margin-top: 1.5rem;
+}
+.collection-list .product-block__title a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.collection-list .rimage-wrapper .rimage__image {
+  border-radius: 100%;
+}
+.collection-list .hover-images:hover .image-one,
+.collection-list .hover-images--two .image-two {
+  transform: unset;
+}
+.collection-list .product-block {
+  padding-left: unset;
+}
+.collection-list .product-block .hover-images {
+  padding: 20px;
+}
+.collection-list .slick-prev {
+  left: 0;
+}
+.collection-list .slick-next {
+  right: 0;
+}
+.collection-list .slick-arrow {
+  top: 40%;
+}

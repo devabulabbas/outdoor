@@ -58,6 +58,13 @@
         </a>
       {% endif %}
 
+      {% if text != blank %}
+        <div class="overlay-text {% if enlarge_text %}{% if extra_large_text %} extra-large-text {% else %} large-text{% endif %}{% endif %}">
+          {{ text }}
+        </div>
+      {% endif %}
+
+      
       {% if title != blank %}
         <{{ title_tag }}
           class="
@@ -68,11 +75,8 @@
           {{- title -}}
         </{{ title_tag }}>
       {% endif %}
-      {% if text != blank %}
-        <div class="overlay-text {% if enlarge_text %}{% if extra_large_text %} extra-large-text {% else %} large-text{% endif %}{% endif %}">
-          {{ text }}
-        </div>
-      {% endif %}
+  
+      
 
       {% if url_text != blank or url_text_2 != blank %}
         <div class="overlay__links">

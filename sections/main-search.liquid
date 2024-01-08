@@ -10,11 +10,13 @@
           <label for="Search" class="label-hidden">
             {{- 'general.search.placeholder' | t -}}
           </label>
-          <input type="search"
-                name="q"
-                id="Search"
-                value="{{ search.terms | escape | remove: '*' }}"
-                placeholder="{{ 'general.search.placeholder' | t }}">
+          <input
+            type="search"
+            name="q"
+            id="Search"
+            value="{{ search.terms | escape | remove: '*' }}"
+            placeholder="{{ 'general.search.placeholder' | t }}"
+          >
           <button type="submit" class="btn search-page-button">
             {{- 'general.search.submit' | t -}}
           </button>
@@ -60,7 +62,7 @@
         {% capture grid_class_list %}{{ grid_class }} small-down--{{ grid_mobile_class }} grid-flex__item{% endcapture %}
 
         <div class="cc-filters-results">
-          <div class="grid-flex large-row">          
+          <div class="grid-flex large-row">
             {%- for item in search.results -%}
               {%- if item.object_type == 'product' -%}
                 {% render 'product-block',
@@ -95,74 +97,74 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Search results",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "show_vendor",
-        "label": "Show vendor",
-        "default": false
-      },
-      {
-        "type": "header",
-        "content": "Layout"
-      },
-      {
-        "type": "range",
-        "id": "grid",
-        "label": "Items per row (desktop)",
-        "min": 2,
-        "max": 5,
-        "step": 1,
-        "default": 4
-      },
-      {
-        "type": "select",
-        "id": "grid_mobile",
-        "label": "Items per row (mobile)",
-        "options": [
-          { "value": "1", "label": "1" },
-          { "value": "2", "label": "2" }
-        ],
-        "default": "2"
-      },
-      {
-        "type": "range",
-        "id": "pagination_limit",
-        "min": 12,
-        "max": 50,
-        "step": 2,
-        "label": "Items per page",
-        "default": 16
-      },
-      {
-        "type": "header",
-        "content": "Filtering"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_filters",
-        "label": "Enable filtering",
-        "info": "[Customize filters](\/admin\/menus)",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_filter_prod_counts",
-        "label": "Show results counts",
-        "default": true
-      },
-      {
-        "type": "header",
-        "content": "Sorting"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_sort_by",
-        "label": "Show 'sort by' option",
-        "default": true
-      }
-    ]
-  }
+{
+  "name": "Search results",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Items per row (desktop)",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "grid_mobile",
+      "label": "Items per row (mobile)",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "pagination_limit",
+      "min": 12,
+      "max": 50,
+      "step": 2,
+      "label": "Items per page",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Filtering"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_filters",
+      "label": "Enable filtering",
+      "info": "[Customize filters](\/admin\/menus)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_filter_prod_counts",
+      "label": "Show results counts",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Sorting"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sort_by",
+      "label": "Show 'sort by' option",
+      "default": true
+    }
+  ]
+}
 {% endschema %}

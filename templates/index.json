@@ -99,17 +99,18 @@
     "collection-list": {
       "type": "collection-list",
       "settings": {
-        "title": "Collection list",
+        "col_image": "shopify:\/\/shop_images\/Layer_1.svg",
+        "title": "Top Categories",
         "enlarge_title": false,
         "collection_list": [
-          "outdoor",
-          "outdoor-weather-instruments",
-          "outdoor-covers",
-          "outdoor-tackle-storage",
-          "paddlesports-life-vests",
-          "watersports-life-vests"
+          "watersports",
+          "men-jackets",
+          "women-watches",
+          "women-jackets",
+          "men-watches",
+          "outdoor"
         ],
-        "grid": 4
+        "grid": 3
       }
     },
     "promo-images": {
@@ -125,8 +126,8 @@
             "color_bg": "#ffffff",
             "gradient_bg": "",
             "overlay_opacity": 0,
-            "title": "<p>Lorem ipsum dolor sit amet consectetur. Viverra nibh nunc erat magna sed fringilla id. Egestas sapien erat tempor vivamus aliquam ac. Etiam orci sed ac arcu. Mauris at <\/p>",
             "offer": "Provide Your All Outdoor Needs",
+            "title": "<p>Lorem ipsum dolor sit amet consectetur. Viverra nibh nunc erat magna sed fringilla id. Egestas sapien erat tempor vivamus aliquam ac. Etiam orci sed ac arcu. Mauris at <\/p>",
             "url_text": "Know More",
             "url": "",
             "url_style": "button_2",
@@ -144,8 +145,8 @@
             "color_bg": "#ffffff",
             "gradient_bg": "",
             "overlay_opacity": 0,
-            "title": "",
             "offer": "",
+            "title": "",
             "url_text": "",
             "url": "",
             "url_style": "button_1",
@@ -166,8 +167,8 @@
       "settings": {
         "title": "Our Hot Picks",
         "enlarge_title": false,
-        "link_text": "Shop now",
-        "collection": "test",
+        "link_text": "",
+        "collection": "outdoor-tents",
         "show_vendor": false,
         "enable_carousel": true,
         "grid": 5,
@@ -210,58 +211,12 @@
       "settings": {
         "grid": 2,
         "image_height": 600,
-        "image_height_mobile": 300,
+        "image_height_mobile": 600,
         "enable_margin": true,
-        "enable_carousel": true,
+        "enable_carousel": false,
         "overlay_style": "no_background",
         "color_overlay_bg": "#ffffff",
-        "overlay_opacity": 80,
-        "color_overlay_text": "#ffffff",
-        "overlay_url_style": "link_style"
-      }
-    },
-    "89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a": {
-      "type": "image-gallery",
-      "blocks": {
-        "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_12_6a9ddf8e-8949-43fb-acef-1784b750aea8.png",
-            "enlarge_image": true,
-            "link": "",
-            "title": "Women Athelesear",
-            "text": "",
-            "button_label": "Shop Women",
-            "overlay_position": "bottom-left"
-          }
-        },
-        "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_274.png",
-            "enlarge_image": false,
-            "link": "",
-            "title": "Men Fittness Wear",
-            "text": "",
-            "button_label": "Shop Men",
-            "overlay_position": "bottom-left"
-          }
-        }
-      },
-      "block_order": [
-        "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-1",
-        "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "grid": 2,
-        "image_height": 600,
-        "image_height_mobile": 300,
-        "enable_margin": true,
-        "enable_carousel": true,
-        "overlay_style": "no_background",
-        "color_overlay_bg": "#ffffff",
-        "overlay_opacity": 80,
+        "overlay_opacity": 50,
         "color_overlay_text": "#ffffff",
         "overlay_url_style": "link_style"
       }
@@ -269,17 +224,19 @@
     "6da16da8-634b-4a5b-94f2-b408926efbf6": {
       "type": "logo-list",
       "blocks": {
-        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-1": {
+        "b5f0640d-7501-43eb-bf50-92df07225304": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/hanes.png",
             "image_width": 160,
             "link": "",
             "title": ""
           }
         },
-        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-2": {
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-1": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/adidas.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -288,6 +245,7 @@
         "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-3": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/columbia.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -296,14 +254,25 @@
         "7e542aa9-bbd7-4faa-90e1-06b804dedb51": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/burnside.png",
             "image_width": 160,
             "link": "",
             "title": ""
           }
         },
-        "b5f0640d-7501-43eb-bf50-92df07225304": {
+        "3ab18ca3-bff5-44c1-9fa7-357bacfb96d5": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/dickies.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/oakley_befd2a23-c3f1-4450-9f3a-094702d7f52c.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -311,14 +280,15 @@
         }
       },
       "block_order": [
+        "b5f0640d-7501-43eb-bf50-92df07225304",
         "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-1",
-        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-2",
         "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-3",
         "7e542aa9-bbd7-4faa-90e1-06b804dedb51",
-        "b5f0640d-7501-43eb-bf50-92df07225304"
+        "3ab18ca3-bff5-44c1-9fa7-357bacfb96d5",
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-2"
       ],
       "settings": {
-        "title": "Logo list",
+        "title": "",
         "color_bg": "#ffffff",
         "color_title": "#2a2a2a",
         "color_text": "#333333",
@@ -331,24 +301,24 @@
       "type": "standout-collection",
       "settings": {
         "enable_overlay": false,
-        "section_heading": "Featured Products",
-        "section_para": "<p>Pair some text with a product to highlight features.<\/p>",
-        "collection": "test",
+        "section_heading": "Find Your Need",
+        "section_para": "<p>Men’s & Women’s UPF Apparel<\/p>",
+        "collection": "outdoor",
         "color_text": "#2a2a2a",
-        "color_bg": "#ffffff",
+        "color_bg": "#fafafa",
         "gradient_bg": "",
-        "alternative_image": "shopify:\/\/shop_images\/Rectangle_15_cc9b13b0-2d69-41e4-9ce7-b16255b5d1aa.png",
+        "alternative_image": "shopify:\/\/shop_images\/Rectangle_15_7fd57be2-ec4e-4f85-9b7c-cff8634b70c9.png",
         "layout": "left",
         "show_vendor": false,
         "color_overlay_bg": "#ffffff",
         "overlay_opacity": 0,
-        "color_overlay_text": "#333333",
+        "color_overlay_text": "#2a2a2a",
         "overlay_url_text": "",
         "url_style": "button_1",
         "enlarge_title": false,
-        "overlay_position_y": 70,
+        "overlay_position_y": 50,
         "color_label_background": "#ffffff",
-        "color_label_text": "#333333",
+        "color_label_text": "#2a2a2a",
         "product_id": "",
         "show_chevron": true,
         "chevron_position": "right",
@@ -364,7 +334,7 @@
         "height": "fixed",
         "height_desktop": 500,
         "height_mobile": 500,
-        "color_overlay_bg": "#ffffff",
+        "color_overlay_bg": "rgba(0,0,0,0)",
         "overlay_opacity": 62,
         "color_overlay_text": "#ffffff",
         "text_alignment": "center",
@@ -403,11 +373,11 @@
       "type": "standout-collection",
       "settings": {
         "enable_overlay": false,
-        "section_heading": "<p>Featured Products<\/p>",
-        "section_para": "<p>Pair some text with a product to highlight features.<\/p>",
+        "section_heading": "Find Your Need",
+        "section_para": "<p>Men’s & Women’s UPF Apparel<\/p>",
         "collection": "camping-accessories",
-        "color_text": "#333333",
-        "color_bg": "#dae4e6",
+        "color_text": "#2a2a2a",
+        "color_bg": "#fafafa",
         "gradient_bg": "",
         "alternative_image": "shopify:\/\/shop_images\/Rectangle_15_cc9b13b0-2d69-41e4-9ce7-b16255b5d1aa.png",
         "layout": "right",
@@ -446,7 +416,7 @@
             "star_rating": 5,
             "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
             "image": "shopify:\/\/shop_images\/Ellipse_18.png",
-            "author": ""
+            "author": "Jessica.L"
           }
         },
         "c16e46a1-f852-49a8-9e00-1f207ef2042c": {
@@ -455,7 +425,7 @@
             "star_rating": 5,
             "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
             "image": "shopify:\/\/shop_images\/Ellipse_18.png",
-            "author": ""
+            "author": "Jessica.L"
           }
         }
       },
@@ -467,11 +437,11 @@
       "settings": {
         "title": "Check What client says",
         "subtitle": "<p>Lorem ipsum dolor sit amet consectetur. Lectus egestas non semper ac sem diam. Hendrerit pellentesque in commodo dictum sed id cursus semper. <\/p>",
-        "color_title": "#333333",
-        "color_text": "#333333",
-        "color_bg": "#ecf1f2",
+        "color_title": "#2a2a2a",
+        "color_text": "#2a2a2a",
+        "color_bg": "#fafafa",
         "gradient_bg": "",
-        "color_star": "#ffdd00",
+        "color_star": "#e7a424",
         "enlarge_title": false,
         "enlarge_text": false,
         "autoplay": false,
@@ -486,7 +456,6 @@
     "promo-images",
     "featured-collection",
     "bdd4ea91-d38c-42e3-b2ee-7617ff7c7cb0",
-    "89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a",
     "6da16da8-634b-4a5b-94f2-b408926efbf6",
     "6385f23f-95ca-41a3-b757-6bbcb6efb0b2",
     "2e12ce62-90e5-4fd7-9d4e-a12f3e23f28a",
