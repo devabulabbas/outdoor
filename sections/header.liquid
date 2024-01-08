@@ -1,3 +1,4 @@
+{{ 'component-header.css' | asset_url | stylesheet_tag }}
 {%- capture image_size -%}{{ section.settings.logo_width | times: 2 }}x{%- endcapture -%}
 {% style %}
   .store-logo--image{
@@ -220,7 +221,7 @@
             <div class="utils__item header-cart hide-for-search">
               <a href="{{ routes.cart_url }}">
                 <span class="icon--header">{% render 'icon' with section.settings.cart_icon %}</span>
-                <span class="header-cart__count">{{ cart.item_count }}</span>
+                <!-- <span class="header-cart__count">{{ cart.item_count }}</span> -->
               </a>
               <span class="cart_text header-icon-text">Cart</span>
               {% unless cart.items == empty or template contains 'cart' %}

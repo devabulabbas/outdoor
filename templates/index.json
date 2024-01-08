@@ -121,8 +121,8 @@
             "image": "shopify:\/\/shop_images\/Rectangle_284.png",
             "image_link": "",
             "layout": "image_after",
-            "color_text": "#333333",
-            "color_bg": "#dae4e6",
+            "color_text": "#2a2a2a",
+            "color_bg": "#ffffff",
             "gradient_bg": "",
             "overlay_opacity": 0,
             "title": "<p>Lorem ipsum dolor sit amet consectetur. Viverra nibh nunc erat magna sed fringilla id. Egestas sapien erat tempor vivamus aliquam ac. Etiam orci sed ac arcu. Mauris at <\/p>",
@@ -141,7 +141,7 @@
             "image_link": "",
             "layout": "image_after",
             "color_text": "#333333",
-            "color_bg": "#dae4e6",
+            "color_bg": "#ffffff",
             "gradient_bg": "",
             "overlay_opacity": 0,
             "title": "",
@@ -175,6 +175,51 @@
         "grid_mobile": "2"
       }
     },
+    "bdd4ea91-d38c-42e3-b2ee-7617ff7c7cb0": {
+      "type": "image-gallery",
+      "blocks": {
+        "template--21758426284317__bdd4ea91-d38c-42e3-b2ee-7617ff7c7cb0-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_12_6a9ddf8e-8949-43fb-acef-1784b750aea8.png",
+            "enlarge_image": false,
+            "link": "",
+            "title": "Women Athelesear",
+            "text": "",
+            "button_label": "Shop Women",
+            "overlay_position": "bottom-left"
+          }
+        },
+        "template--21758426284317__bdd4ea91-d38c-42e3-b2ee-7617ff7c7cb0-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_274.png",
+            "enlarge_image": false,
+            "link": "",
+            "title": "Men Fittness Wear",
+            "text": "",
+            "button_label": "Shop Men",
+            "overlay_position": "bottom-left"
+          }
+        }
+      },
+      "block_order": [
+        "template--21758426284317__bdd4ea91-d38c-42e3-b2ee-7617ff7c7cb0-image-1",
+        "template--21758426284317__bdd4ea91-d38c-42e3-b2ee-7617ff7c7cb0-image-2"
+      ],
+      "settings": {
+        "grid": 2,
+        "image_height": 600,
+        "image_height_mobile": 300,
+        "enable_margin": true,
+        "enable_carousel": true,
+        "overlay_style": "no_background",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#ffffff",
+        "overlay_url_style": "link_style"
+      }
+    },
     "89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a": {
       "type": "image-gallery",
       "blocks": {
@@ -185,9 +230,9 @@
             "enlarge_image": true,
             "link": "",
             "title": "Women Athelesear",
-            "text": "<p>Shop Women<\/p>",
+            "text": "",
             "button_label": "Shop Women",
-            "overlay_position": "center-center"
+            "overlay_position": "bottom-left"
           }
         },
         "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-2": {
@@ -199,7 +244,7 @@
             "title": "Men Fittness Wear",
             "text": "",
             "button_label": "Shop Men",
-            "overlay_position": "center-center"
+            "overlay_position": "bottom-left"
           }
         }
       },
@@ -207,17 +252,18 @@
         "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-1",
         "template--21758426284317__89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a-image-2"
       ],
+      "disabled": true,
       "settings": {
         "grid": 2,
-        "image_height": 300,
+        "image_height": 600,
         "image_height_mobile": 300,
         "enable_margin": true,
         "enable_carousel": true,
         "overlay_style": "no_background",
         "color_overlay_bg": "#ffffff",
         "overlay_opacity": 80,
-        "color_overlay_text": "#333333",
-        "overlay_url_style": "button_1"
+        "color_overlay_text": "#ffffff",
+        "overlay_url_style": "link_style"
       }
     },
     "6da16da8-634b-4a5b-94f2-b408926efbf6": {
@@ -246,17 +292,35 @@
             "link": "",
             "title": ""
           }
+        },
+        "7e542aa9-bbd7-4faa-90e1-06b804dedb51": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "b5f0640d-7501-43eb-bf50-92df07225304": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
         }
       },
       "block_order": [
         "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-1",
         "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-2",
-        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-3"
+        "template--21758426284317__6da16da8-634b-4a5b-94f2-b408926efbf6-logo-3",
+        "7e542aa9-bbd7-4faa-90e1-06b804dedb51",
+        "b5f0640d-7501-43eb-bf50-92df07225304"
       ],
       "settings": {
         "title": "Logo list",
-        "color_bg": "#dae4e6",
-        "color_title": "#333333",
+        "color_bg": "#ffffff",
+        "color_title": "#2a2a2a",
         "color_text": "#333333",
         "enlarge_title": false,
         "enlarge_text": false,
@@ -270,8 +334,8 @@
         "section_heading": "Featured Products",
         "section_para": "<p>Pair some text with a product to highlight features.<\/p>",
         "collection": "test",
-        "color_text": "#333333",
-        "color_bg": "#dae4e6",
+        "color_text": "#2a2a2a",
+        "color_bg": "#ffffff",
         "gradient_bg": "",
         "alternative_image": "shopify:\/\/shop_images\/Rectangle_15_cc9b13b0-2d69-41e4-9ce7-b16255b5d1aa.png",
         "layout": "left",
@@ -298,11 +362,11 @@
         "image": "shopify:\/\/shop_images\/Rectangle_26.png",
         "image_link": "",
         "height": "fixed",
-        "height_desktop": 480,
+        "height_desktop": 500,
         "height_mobile": 500,
         "color_overlay_bg": "#ffffff",
         "overlay_opacity": 62,
-        "color_overlay_text": "#333333",
+        "color_overlay_text": "#ffffff",
         "text_alignment": "center",
         "overlay_position_x": 50,
         "overlay_position_y": 50,
@@ -317,18 +381,18 @@
         "styled_word_color": "#b5e0fa",
         "overlay_text": "Lorem ipsum dolor sit amet consectetur. Lectus egestas non semper ac sem diam. Hendrerit pellentesque in commodo dictum sed id cursus semper. Placeratdictum bibendum. Urna curabitur eget facilisi",
         "enlarge_text": false,
-        "overlay_url_text_1": "",
+        "overlay_url_text_1": "Shop Now",
         "overlay_url_1": "",
         "overlay_url_text_2": "",
         "overlay_url_2": "",
         "overlay_url_style": "button_1",
         "color_label_background": "#ffffff",
-        "color_label_text": "#333333",
-        "show_chevron": true,
+        "color_label_text": "#2a2a2a",
+        "show_chevron": false,
         "product_id_1": "",
         "chevron_position_1": "right",
-        "label_position_x_1": 20,
-        "label_position_y_1": 30,
+        "label_position_x_1": 50,
+        "label_position_y_1": 50,
         "product_id_2": "",
         "chevron_position_2": "right",
         "label_position_x_2": 80,
@@ -421,6 +485,7 @@
     "collection-list",
     "promo-images",
     "featured-collection",
+    "bdd4ea91-d38c-42e3-b2ee-7617ff7c7cb0",
     "89d7c0c7-1e6c-4ae1-be0d-633b6675fd5a",
     "6da16da8-634b-4a5b-94f2-b408926efbf6",
     "6385f23f-95ca-41a3-b757-6bbcb6efb0b2",

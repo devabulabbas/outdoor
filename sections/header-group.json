@@ -7,7 +7,7 @@
       "settings": {
         "home_only_announcement_bar": false,
         "announcement_bar_text": "Free Shipping on orders above $200",
-        "announcement_bar_col": "#43467f",
+        "announcement_bar_col": "#161d25",
         "announcement_bar_grad": "",
         "announcement_text_col": "#ffffff"
       }
@@ -19,7 +19,7 @@
           "type": "menu_promo",
           "settings": {
             "dropdown_link_title": "Men",
-            "image": "shopify:\/\/shop_images\/104_fl.jpg",
+            "image": "shopify:\/\/shop_images\/men.jpg",
             "text": "",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/all"
@@ -29,7 +29,7 @@
           "type": "menu_promo",
           "settings": {
             "dropdown_link_title": "Women",
-            "image": "shopify:\/\/shop_images\/2026_fl.jpg",
+            "image": "shopify:\/\/shop_images\/woman.jpg",
             "text": "",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/all"
@@ -39,7 +39,7 @@
           "type": "menu_promo",
           "settings": {
             "dropdown_link_title": "Hike & Camp",
-            "image": "shopify:\/\/shop_images\/99559BXL.jpg",
+            "image": "shopify:\/\/shop_images\/camping.jpg",
             "text": "",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/all"
@@ -49,7 +49,7 @@
           "type": "menu_promo",
           "settings": {
             "dropdown_link_title": "Fitness",
-            "image": "shopify:\/\/shop_images\/gfnf.jpg",
+            "image": "shopify:\/\/shop_images\/fitness.jpg",
             "text": "",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/all"
@@ -75,7 +75,7 @@
       ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/outdoor_1_1.png",
-        "logo_width": 140,
+        "logo_width": 130,
         "desktop_layout": "center",
         "show_search_bar_desktop": true,
         "show_search_bar_mobile": true,
